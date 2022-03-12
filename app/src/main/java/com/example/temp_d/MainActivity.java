@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     // 화씨 -> 섭씨 변환 프로그램
 
-
+    //  주석 추가요
     /* EDT에 화씨를 입력 -> '변환'버튼 클릭 -> 섭씨로 변환
      리니어 레이아웃 3개, 컴포넌트 3개 (EDT, TXTV, BTN)
      리니어 레이아웃 큰 틀 1개(vertical), 그 안에 2개는 horizontal로 정렬 */
@@ -53,13 +53,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
 
-                fahr = fahrenheit.getText().toString();
+               /* fahr = fahrenheit.getText().toString();
                 cel = (Double.parseDouble(fahr) - 32) * (5.0/9.0);
                 celsius.setText(cel.toString());
-
-                //                fahr = fahrenheit.getText().toString();
-//                cel = (Double.parseDouble(fahr) - 32) * (5.0/9.0);
-//                celsius.setText(String.format("%.4f",cel));
+*/
+                  fahr = fahrenheit.getText().toString();
+                  cel = (Double.parseDouble(fahr) - 32) * (5.0/9.0);
+                  celsius.setText(String.format("%.4f",cel));
 
                 return false;
 
