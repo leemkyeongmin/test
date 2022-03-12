@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
 //                celsius.setText(String.format("%.4f",cel));
 
                 return false;
+
+                // TEST
             }
         });
     }
